@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Sanket Kandel</title>
+  <meta name="description"
+    content="Get in touch with Sanket Kandel for freelance projects, collaborations, speaking opportunities, or just to say hello." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="bg-canvas"></div>
+  <div class="bg-grid"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <nav class="navbar">
+    <a class="nav-logo" href="index.html">SK</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="about.html"><i class="fa-solid fa-user"></i> About</a></li>
+      <li><a href="projects.html"><i class="fa-solid fa-rocket"></i> Projects</a></li>
+      <li><a href="skills.html"><i class="fa-solid fa-bolt"></i> Skills</a></li>
+      <li><a href="blog.html"><i class="fa-solid fa-pen-nib"></i> Blog</a></li>
+      <li><a href="contact.html"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="contact.html">Hire Me <i class="fa-solid fa-arrow-right"></i></a></div>
+    <div class="nav-hamburger" id="nav-hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <div class="page-wrapper">
+    <div class="page-hero">
+      <div class="section-tag"><i class="fa-solid fa-paper-plane"></i> Let's Connect</div>
+      <h1 class="page-hero-title">Get In <span class="gradient-text">Touch</span></h1>
+      <p class="page-hero-sub">Have a project in mind? Looking for a collaborator? Or just want to say hello? I'd love
+        to hear from you.</p>
+    </div>
+
+    <div class="section">
+      <div class="contact-grid">
+        <!-- Info panel -->
+        <div class="contact-info">
+          <div class="contact-info-header">
+            <h2>Let's Build <span class="gradient-text">Something</span> Together</h2>
+            <p>I'm currently available for freelance projects, full-time roles, speaking engagements, and interesting
+              technical collaborations.</p>
+          </div>
+
+          <a href="mailto:kandel.sanket@gmail.com" class="contact-item glass">
+            <div class="contact-item-icon"><i class="fa-solid fa-envelope icon-cyan"></i></div>
+            <div>
+              <div class="contact-item-label">Email</div>
+              <div class="contact-item-value">kandel.sanket@gmail.com</div>
+            </div>
+          </a>
+
+          <a href="tel:+9779840505190" class="contact-item glass">
+            <div class="contact-item-icon"><i class="fa-solid fa-phone icon-pink"></i></div>
+            <div>
+              <div class="contact-item-label">Phone</div>
+              <div class="contact-item-value">+977 9840505190</div>
+            </div>
+          </a>
+
+          <div class="contact-item glass contact-item-static">
+            <div class="contact-item-icon"><i class="fa-solid fa-location-dot icon-violet"></i></div>
+            <div>
+              <div class="contact-item-label">Location</div>
+              <div class="contact-item-value">Gaindakot, Nepal</div>
+            </div>
+          </div>
+
+          <div class="contact-item glass contact-item-static">
+            <div class="contact-item-icon"><i class="fa-solid fa-globe icon-green"></i></div>
+            <div>
+              <div class="contact-item-label">Timezone</div>
+              <div class="contact-item-value">NPT (UTC +5:45)</div>
+            </div>
+          </div>
+
+          <!-- Social links -->
+          <div class="social-section">
+            <div class="social-section-label">Find Me Online</div>
+            <div class="social-links">
+              <a href="https://github.com/virt-sanket" target="_blank" rel="noopener" class="social-link glass">
+                <i class="fa-brands fa-github"></i>
+                <span>github.com/virt-sanket</span>
+                <span class="external-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </a>
+              <a href="https://linkedin.com/in/sanketkandel" target="_blank" rel="noopener" class="social-link glass">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <span>linkedin.com/in/sanketkandel</span>
+                <span class="external-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </a>
+              <a href="#" target="_blank" rel="noopener" class="social-link glass">
+                <i class="fa-brands fa-x-twitter"></i>
+                <span>@tweet-sanket</span>
+                <span class="external-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <div class="contact-form-card glass-lg reveal">
+          <div class="availability-bar">
+            <div class="av-dot"></div>
+            <div class="av-text">Available for new projects</div>
+            <div class="av-sub">Typically replies in 24h</div>
+          </div>
+
+          <form id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contact-name">Your Name *</label>
+                <input class="form-input" type="text" id="contact-name" name="name" placeholder="Sanket" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Email Address *</label>
+                <input class="form-input" type="email" id="contact-email" name="email" placeholder="sanket@example.com"
+                  required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-subject">Subject</label>
+              <input class="form-input" type="text" id="contact-subject" name="subject"
+                placeholder="Let's build something together…" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-type">Project Type</label>
+              <select class="form-input" id="contact-type" name="type">
+                <option value="">Select project type…</option>
+                <option value="freelance">Freelance / Contract Work</option>
+                <option value="fulltime">Full-time Opportunity</option>
+                <option value="collab">Open-Source Collaboration</option>
+                <option value="speaking">Speaking / Workshop</option>
+                <option value="other">Just Saying Hello</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Message *</label>
+              <textarea class="form-textarea" id="contact-message" name="message"
+                placeholder="Tell me about your project, timeline, and budget. The more detail, the better!"
+                required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" id="contact-submit">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+            <p class="form-note">
+              <i class="fa-solid fa-lock icon-cyan"></i> Your data is private and will never be shared.
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <!-- Location card -->
+      <div class="map-box reveal">
+        <div class="map-emoji"><i class="fa-solid fa-map-location-dot icon-lg-map"></i></div>
+        <div class="map-title">Based in Gaindakot, Nepal</div>
+        <div class="map-sub">Working remotely with clients across North America, Europe, and Asia-Pacific</div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>Crafted with <i class="fa-solid fa-heart icon-pink"></i> & passion by <a href="index.html">Sanket Kandel</a> · © 2026</p>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog — Sanket Kandel</title>
+  <meta name="description"
+    content="Engineering articles by Sanket Kandel on React, Node.js, cloud architecture, open source, and developer productivity." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="bg-canvas"></div>
+  <div class="bg-grid"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <nav class="navbar">
+    <a class="nav-logo" href="index.html">SK</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="about.html"><i class="fa-solid fa-user"></i> About</a></li>
+      <li><a href="projects.html"><i class="fa-solid fa-rocket"></i> Projects</a></li>
+      <li><a href="skills.html"><i class="fa-solid fa-bolt"></i> Skills</a></li>
+      <li><a href="blog.html"><i class="fa-solid fa-pen-nib"></i> Blog</a></li>
+      <li><a href="contact.html"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="contact.html">Hire Me <i class="fa-solid fa-arrow-right"></i></a></div>
+    <div class="nav-hamburger" id="nav-hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <div class="page-wrapper">
+    <div class="page-hero">
+      <div class="section-tag"><i class="fa-solid fa-pen-fancy"></i> Writing</div>
+      <h1 class="page-hero-title">The <span class="gradient-text-pink">Blog</span></h1>
+      <p class="page-hero-sub">Deep dives into engineering, cloud architecture, developer tools, and the craft of
+        building software. No fluff, just substance.</p>
+    </div>
+
+    <div class="section">
+      <!-- Featured post -->
+      <div class="section-tag"><i class="fa-solid fa-fire"></i> Editor's Pick</div>
+      <a href="#" class="blog-featured glass-lg reveal">
+        <div class="blog-featured-img"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+        <div class="blog-featured-content">
+          <div class="blog-featured-label"><i class="fa-solid fa-star"></i> Featured Article</div>
+          <div class="blog-featured-title">Building a Production-Ready Multi-Tenant SaaS on AWS in 2026</div>
+          <div class="blog-meta">
+            <span><i class="fa-regular fa-calendar"></i> Jul 15, 2026</span>
+            <span><i class="fa-regular fa-clock"></i> 18 min read</span>
+            <span class="badge badge-violet">Cloud</span>
+          </div>
+          <div class="blog-featured-excerpt">A deep, no-holds-barred guide to architecting a multi-tenant SaaS product
+            from scratch — covering database isolation strategies, Terraform modules, cost optimization, zero-downtime
+            deployments, and the mistakes I made so you don't have to.</div>
+          <div class="blog-read-more">Read Article <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+      </a>
+
+      <!-- Category filter -->
+      <div class="cat-bar">
+        <button class="cat-btn active">All</button>
+        <button class="cat-btn"><i class="fa-solid fa-code"></i> Engineering</button>
+        <button class="cat-btn"><i class="fa-solid fa-cloud"></i> Cloud & DevOps</button>
+        <button class="cat-btn"><i class="fa-solid fa-brain"></i> AI & ML</button>
+        <button class="cat-btn"><i class="fa-brands fa-github"></i> Open Source</button>
+        <button class="cat-btn"><i class="fa-solid fa-briefcase"></i> Career</button>
+      </div>
+
+      <!-- Blog grid -->
+      <div class="blog-grid">
+        <a href="#" class="blog-card glass reveal">
+          <div class="blog-card-icon"><i class="fa-brands fa-react icon-cyan"></i></div>
+          <div class="blog-meta">
+            <span><i class="fa-regular fa-calendar"></i> Jul 8, 2026</span>
+            <span><i class="fa-regular fa-clock"></i> 12 min</span>
+          </div>
+          <div class="blog-title">React Server Components in Depth: What Changes, What Doesn't</div>
+          <div class="blog-excerpt">A comprehensive look at React Server Components after 6 months of production use.
+            Real performance numbers, gotchas, and patterns that actually work.</div>
+          <div class="blog-tags">
+            <span class="badge badge-cyan">Engineering</span>
+          </div>
+          <div class="blog-read-more">Read More <i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+
+        <a href="#" class="blog-card glass reveal">
+          <div class="blog-card-icon"><i class="fa-solid fa-microchip icon-pink"></i></div>
+          <div class="blog-meta">
+            <span><i class="fa-regular fa-calendar"></i> Jun 28, 2026</span>
+            <span><i class="fa-regular fa-clock"></i> 9 min</span>
+          </div>
+          <div class="blog-title">Building a RAG Pipeline That Actually Scales</div>
+          <div class="blog-excerpt">How I built a production Retrieval-Augmented Generation system that handles 10k+
+            queries per day without breaking the bank. Architecture, chunking strategies, and embeddings.</div>
+          <div class="blog-tags">
+            <span class="badge badge-pink">AI & ML</span>
+          </div>
+          <div class="blog-read-more">Read More <i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+
+        <a href="#" class="blog-card glass reveal">
+          <div class="blog-card-icon"><i class="fa-brands fa-docker icon-cyan"></i></div>
+          <div class="blog-meta">
+            <span><i class="fa-regular fa-calendar"></i> Jun 15, 2026</span>
+            <span><i class="fa-regular fa-clock"></i> 15 min</span>
+          </div>
+          <div class="blog-title">Kubernetes for Full-Stack Developers: A Practical Primer</div>
+          <div class="blog-excerpt">Skip the theory — this guide shows you exactly how to deploy, scale, and monitor a
+            full-stack application on Kubernetes using practical, production-tested patterns.</div>
+          <div class="blog-tags">
+            <span class="badge badge-violet">Cloud & DevOps</span>
+          </div>
+          <div class="blog-read-more">Read More <i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+
+        <a href="#" class="blog-card glass reveal">
+          <div class="blog-card-icon"><i class="fa-brands fa-github icon-white"></i></div>
+          <div class="blog-meta">
+            <span><i class="fa-regular fa-calendar"></i> Jun 3, 2026</span>
+            <span><i class="fa-regular fa-clock"></i> 8 min</span>
+          </div>
+          <div class="blog-title">How Open Source Changed My Career (And Can Change Yours)</div>
+          <div class="blog-excerpt">My journey from lurking in GitHub issues to maintaining libraries with 3k+ stars.
+            Practical advice on how to get started and stay consistent.</div>
+          <div class="blog-tags">
+            <span class="badge badge-green">Open Source</span>
+          </div>
+          <div class="blog-read-more">Read More <i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+
+        <a href="#" class="blog-card glass reveal">
+          <div class="blog-card-icon"><i class="fa-solid fa-piggy-bank icon-amber"></i></div>
+          <div class="blog-meta">
+            <span><i class="fa-regular fa-calendar"></i> May 20, 2026</span>
+            <span><i class="fa-regular fa-clock"></i> 11 min</span>
+          </div>
+          <div class="blog-title">Cutting Our AWS Bill by 35%: A Post-Mortem</div>
+          <div class="blog-excerpt">We were burning $14k/month on AWS. Here's the exact playbook we used to bring it
+            down to $9k — Reserved Instances, right-sizing, caching, and architectural changes.</div>
+          <div class="blog-tags">
+            <span class="badge badge-amber">Cloud & DevOps</span>
+          </div>
+          <div class="blog-read-more">Read More <i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+
+        <a href="#" class="blog-card glass reveal">
+          <div class="blog-card-icon"><i class="fa-solid fa-users-gear icon-violet"></i></div>
+          <div class="blog-meta">
+            <span><i class="fa-regular fa-calendar"></i> May 5, 2026</span>
+            <span><i class="fa-regular fa-clock"></i> 7 min</span>
+          </div>
+          <div class="blog-title">From IC to Tech Lead: What Nobody Tells You</div>
+          <div class="blog-excerpt">Making the jump from individual contributor to tech lead is more about
+            communication, trust-building, and systems thinking than it is about coding chops.</div>
+          <div class="blog-tags">
+            <span class="badge badge-pink">Career</span>
+          </div>
+          <div class="blog-read-more">Read More <i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="newsletter reveal">
+        <h3>Stay in the <span class="gradient-text">Loop</span></h3>
+        <p>Get my best engineering articles delivered to your inbox — no spam, unsubscribe anytime.</p>
+        <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+          <input type="email" placeholder="your@email.com" required id="nl-email" aria-label="Email address" />
+          <button type="submit" class="btn btn-primary" id="nl-submit">Subscribe <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>Crafted with <i class="fa-solid fa-heart icon-pink"></i> & passion by <a href="index.html">Sanket Kandel</a> · © 2026</p>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

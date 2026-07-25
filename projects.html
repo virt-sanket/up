@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Projects — Sanket Kandel</title>
+  <meta name="description" content="Explore Sanket Kandel's full project portfolio — web apps, AI tools, open-source libraries, and cloud infrastructure solutions."/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="bg-canvas"></div>
+  <div class="bg-grid"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <nav class="navbar">
+    <a class="nav-logo" href="index.html">SK</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="about.html"><i class="fa-solid fa-user"></i> About</a></li>
+      <li><a href="projects.html"><i class="fa-solid fa-rocket"></i> Projects</a></li>
+      <li><a href="skills.html"><i class="fa-solid fa-bolt"></i> Skills</a></li>
+      <li><a href="blog.html"><i class="fa-solid fa-pen-nib"></i> Blog</a></li>
+      <li><a href="contact.html"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="contact.html">Hire Me <i class="fa-solid fa-arrow-right"></i></a></div>
+    <div class="nav-hamburger" id="nav-hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <div class="page-wrapper">
+    <div class="page-hero">
+      <div class="section-tag"><i class="fa-solid fa-cubes"></i> Portfolio</div>
+      <h1 class="page-hero-title">My <span class="gradient-text">Projects</span></h1>
+      <p class="page-hero-sub">40+ projects shipped across startups, enterprises, and the open-source community. From weekend experiments to production systems serving tens of thousands.</p>
+    </div>
+
+    <div class="section">
+      <!-- Filters -->
+      <div class="filter-bar" id="filter-bar">
+        <button class="filter-btn active" data-filter="all"><i class="fa-solid fa-border-all"></i> All</button>
+        <button class="filter-btn" data-filter="fullstack"><i class="fa-solid fa-layer-group"></i> Full-Stack</button>
+        <button class="filter-btn" data-filter="ai"><i class="fa-solid fa-brain"></i> AI / ML</button>
+        <button class="filter-btn" data-filter="cloud"><i class="fa-solid fa-cloud"></i> Cloud</button>
+        <button class="filter-btn" data-filter="oss"><i class="fa-brands fa-github"></i> Open Source</button>
+        <button class="filter-btn" data-filter="mobile"><i class="fa-solid fa-mobile-screen-button"></i> Mobile</button>
+      </div>
+
+      <!-- Projects grid -->
+      <div class="projects-grid" id="projects-grid">
+
+        <!-- Featured -->
+        <div class="project-card glass-lg project-featured reveal" data-category="fullstack cloud">
+          <div class="project-visual"><i class="fa-solid fa-cloud"></i></div>
+          <div class="project-content">
+            <div class="featured-label"><i class="fa-solid fa-star"></i> Featured Project</div>
+            <div class="project-title">CloudPortal</div>
+            <p class="project-desc">A multi-tenant SaaS infrastructure management platform with Terraform integration, cost analytics dashboards, and one-click deployments to AWS, GCP, and Azure. Currently serving 50+ enterprise clients across 12 countries, managing over $2M in monthly cloud spend.</p>
+            <div class="project-tags">
+              <span class="project-tag"><i class="fa-solid fa-layer-group"></i> Next.js 14</span>
+              <span class="project-tag"><i class="fa-solid fa-cubes"></i> Terraform</span>
+              <span class="project-tag"><i class="fa-brands fa-aws"></i> AWS CDK</span>
+              <span class="project-tag"><i class="fa-solid fa-database"></i> PostgreSQL</span>
+              <span class="project-tag"><i class="fa-solid fa-shield-halved"></i> Prisma</span>
+              <span class="project-tag"><i class="fa-solid fa-bolt"></i> Redis</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="project-link secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+              <span class="badge badge-green project-status"><i class="fa-solid fa-circle-check"></i> In Production</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 1 -->
+        <div class="project-card glass reveal" data-category="fullstack">
+          <div class="project-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <div class="project-title">NovaDash</div>
+          <p class="project-desc">Real-time analytics dashboard with live WebSocket data streams, interactive D3.js charts, and dark-mode glassmorphism UI — serving 10k+ daily active users.</p>
+          <div class="project-tags">
+            <span class="project-tag"><i class="fa-brands fa-react"></i> React</span>
+            <span class="project-tag"><i class="fa-solid fa-chart-pie"></i> D3.js</span>
+            <span class="project-tag"><i class="fa-solid fa-bolt"></i> WebSocket</span>
+            <span class="project-tag"><i class="fa-brands fa-node-js"></i> Node.js</span>
+            <span class="project-tag"><i class="fa-solid fa-database"></i> MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="#" class="project-link secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="project-card glass reveal" data-category="ai">
+          <div class="project-icon"><i class="fa-solid fa-robot"></i></div>
+          <div class="project-title">AetherAI</div>
+          <p class="project-desc">AI-powered code review assistant that integrates with GitHub PRs, providing contextual, actionable feedback. Reduced average review time by 60% across 200+ repositories.</p>
+          <div class="project-tags">
+            <span class="project-tag"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="project-tag"><i class="fa-solid fa-brain"></i> OpenAI GPT-4</span>
+            <span class="project-tag"><i class="fa-solid fa-server"></i> FastAPI</span>
+            <span class="project-tag"><i class="fa-brands fa-docker"></i> Docker</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="#" class="project-link secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="project-card glass reveal" data-category="oss">
+          <div class="project-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <div class="project-title">GlassUI</div>
+          <p class="project-desc">An open-source React component library implementing glassmorphism design patterns. 3.2k GitHub stars, 180 contributors, and used in 500+ projects worldwide.</p>
+          <div class="project-tags">
+            <span class="project-tag"><i class="fa-brands fa-react"></i> React</span>
+            <span class="project-tag"><i class="fa-solid fa-code"></i> TypeScript</span>
+            <span class="project-tag"><i class="fa-solid fa-book"></i> Storybook</span>
+            <span class="project-tag"><i class="fa-solid fa-box"></i> Rollup</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">Docs <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="#" class="project-link secondary"><i class="fa-brands fa-github"></i> GitHub <i class="fa-solid fa-star icon-amber"></i> 3.2k</a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="project-card glass reveal" data-category="ai fullstack">
+          <div class="project-icon"><i class="fa-solid fa-comments"></i></div>
+          <div class="project-title">Synapse Chat</div>
+          <p class="project-desc">Multi-model AI chat application supporting GPT-4, Claude, and Gemini with conversation history, file uploads, and team workspaces.</p>
+          <div class="project-tags">
+            <span class="project-tag"><i class="fa-solid fa-layer-group"></i> Next.js</span>
+            <span class="project-tag"><i class="fa-solid fa-brain"></i> Vercel AI SDK</span>
+            <span class="project-tag"><i class="fa-solid fa-database"></i> Supabase</span>
+            <span class="project-tag"><i class="fa-solid fa-credit-card"></i> Stripe</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="#" class="project-link secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="project-card glass reveal" data-category="mobile">
+          <div class="project-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <div class="project-title">TrailMap</div>
+          <p class="project-desc">Cross-platform hiking trail discovery app for Nepal with offline maps, elevation profiles, and community-driven trail ratings. 8k+ downloads on iOS and Android.</p>
+          <div class="project-tags">
+            <span class="project-tag"><i class="fa-brands fa-react"></i> React Native</span>
+            <span class="project-tag"><i class="fa-solid fa-map-location-dot"></i> MapboxGL</span>
+            <span class="project-tag"><i class="fa-solid fa-mobile"></i> Expo</span>
+            <span class="project-tag"><i class="fa-solid fa-fire"></i> Firebase</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">App Store <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="#" class="project-link secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="project-card glass reveal" data-category="cloud">
+          <div class="project-icon"><i class="fa-solid fa-terminal"></i></div>
+          <div class="project-title">DevFlow CLI</div>
+          <p class="project-desc">A developer productivity CLI that automates GitHub workflows, PR templates, semantic versioning, and deployment pipelines with a single command.</p>
+          <div class="project-tags">
+            <span class="project-tag"><i class="fa-brands fa-node-js"></i> Node.js</span>
+            <span class="project-tag"><i class="fa-solid fa-terminal"></i> Commander.js</span>
+            <span class="project-tag"><i class="fa-brands fa-github"></i> GitHub API</span>
+            <span class="project-tag"><i class="fa-solid fa-code"></i> Shell</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">npm <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="#" class="project-link secondary"><i class="fa-brands fa-github"></i> GitHub <i class="fa-solid fa-star icon-amber"></i> 870</a>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="project-card glass reveal" data-category="fullstack">
+          <div class="project-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+          <div class="project-title">StoreFront</div>
+          <p class="project-desc">Headless e-commerce platform with Shopify integration, real-time inventory, and a blazing-fast storefront using Next.js and ISR. 3x faster than the previous store.</p>
+          <div class="project-tags">
+            <span class="project-tag"><i class="fa-solid fa-layer-group"></i> Next.js</span>
+            <span class="project-tag"><i class="fa-brands fa-shopify"></i> Shopify</span>
+            <span class="project-tag"><i class="fa-solid fa-network-wired"></i> GraphQL</span>
+            <span class="project-tag"><i class="fa-solid fa-palette"></i> Tailwind</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="#" class="project-link secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="project-card glass reveal" data-category="oss">
+          <div class="project-icon"><i class="fa-solid fa-vault"></i></div>
+          <div class="project-title">env-vault</div>
+          <p class="project-desc">Secure environment variable management for teams. Encrypts, versions, and syncs .env files across your team using AES-256 and zero-knowledge architecture.</p>
+          <div class="project-tags">
+            <span class="project-tag"><i class="fa-brands fa-node-js"></i> Node.js</span>
+            <span class="project-tag"><i class="fa-solid fa-terminal"></i> CLI</span>
+            <span class="project-tag"><i class="fa-solid fa-lock"></i> Cryptography</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">npm <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="#" class="project-link secondary"><i class="fa-brands fa-github"></i> GitHub <i class="fa-solid fa-star icon-amber"></i> 1.4k</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Open Source -->
+      <div class="section-gap">
+        <div class="section-tag"><i class="fa-brands fa-github"></i> Open Source</div>
+        <h2 class="section-title">OSS <span class="gradient-text">Contributions</span></h2>
+        <p class="section-subtitle">Giving back to the community that made me who I am.</p>
+        <div class="oss-list">
+          <div class="oss-item glass reveal">
+            <div class="oss-icon"><i class="fa-brands fa-react icon-cyan"></i></div>
+            <div>
+              <div class="oss-name">facebook/react</div>
+              <div class="oss-desc">Fixed memory leak in concurrent mode scheduler — merged in v18.2</div>
+            </div>
+            <div class="oss-stats">
+              <span class="oss-stat"><i class="fa-solid fa-star icon-amber"></i> 220k</span>
+              <span class="oss-stat"><i class="fa-solid fa-code-pull-request"></i> 3 PRs</span>
+            </div>
+          </div>
+          <div class="oss-item glass reveal">
+            <div class="oss-icon"><i class="fa-solid fa-layer-group icon-white"></i></div>
+            <div>
+              <div class="oss-name">vercel/next.js</div>
+              <div class="oss-desc">Added TypeScript types for Server Actions API and improved DX documentation</div>
+            </div>
+            <div class="oss-stats">
+              <span class="oss-stat"><i class="fa-solid fa-star icon-amber"></i> 120k</span>
+              <span class="oss-stat"><i class="fa-solid fa-code-pull-request"></i> 5 PRs</span>
+            </div>
+          </div>
+          <div class="oss-item glass reveal">
+            <div class="oss-icon"><i class="fa-solid fa-database icon-violet"></i></div>
+            <div>
+              <div class="oss-name">prisma/prisma</div>
+              <div class="oss-desc">Contributed composite index support for PostgreSQL and improved error messages</div>
+            </div>
+            <div class="oss-stats">
+              <span class="oss-stat"><i class="fa-solid fa-star icon-amber"></i> 38k</span>
+              <span class="oss-stat"><i class="fa-solid fa-code-pull-request"></i> 7 PRs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>Crafted with <i class="fa-solid fa-heart icon-pink"></i> & passion by <a href="index.html">Sanket Kandel</a> · © 2026</p>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+  <script>
+    // Filter functionality
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('#projects-grid [data-category]');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        cards.forEach(card => {
+          const cats = card.dataset.category || '';
+          card.style.display = (filter === 'all' || cats.includes(filter)) ? '' : 'none';
+        });
+      });
+    });
+  </script>
+</body>
+</html>

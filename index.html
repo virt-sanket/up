@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SANKET KANDEL — Full-Stack Developer</title>
+  <meta name="description"
+    content="SANKET KANDEL is a full-stack developer specialising in React, Node.js, and cloud-native applications. Building tomorrow's web today." />
+  <meta name="keywords" content="developer, portfolio, full-stack, React, Node.js, cloud" />
+  <meta property="og:title" content="SANKET KANDEL — Full-Stack Developer" />
+  <meta property="og:description" content="Building modern, performant, and beautiful web applications." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Background -->
+  <div class="bg-canvas"></div>
+  <div class="bg-grid"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- Nav -->
+  <nav class="navbar" id="navbar">
+    <a class="nav-logo" href="index.html">SK</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="about.html"><i class="fa-solid fa-user"></i> About</a></li>
+      <li><a href="projects.html"><i class="fa-solid fa-rocket"></i> Projects</a></li>
+      <li><a href="skills.html"><i class="fa-solid fa-bolt"></i> Skills</a></li>
+      <li><a href="blog.html"><i class="fa-solid fa-pen-nib"></i> Blog</a></li>
+      <li><a href="contact.html"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="contact.html">Hire Me <i class="fa-solid fa-arrow-right"></i></a></div>
+    <div class="nav-hamburger" id="nav-hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-eyebrow"><i class="fa-solid fa-circle-dot gradient-text"></i> Available for work</div>
+        <h1 class="hero-headline">
+          Hi, I'm <span class="gradient-text">Sanket Kandel</span>
+        </h1>
+        <div class="hero-typewriter">
+          <span id="typewriter"></span><span class="cursor"></span>
+        </div>
+        <p class="hero-bio">
+          I craft beautiful, scalable web applications that live at the intersection of stunning design and rock-solid
+          engineering. Passionate about open source, cloud infrastructure, and creating experiences that matter.
+        </p>
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-primary">
+            <span>View My Work</span> <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="contact.html" class="btn btn-ghost">
+            <span>Get In Touch</span> <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="#" class="social-btn" title="GitHub" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="#" class="social-btn" title="LinkedIn" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="social-btn" title="Twitter / X" aria-label="Twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="#" class="social-btn" title="Email" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Avatar -->
+      <div class="hero-visual">
+        <div class="avatar-card">
+          <div class="avatar-glow"></div>
+          <div class="avatar-ring"></div>
+          <img src="assets/avatar.jpg" alt="Sanket Kandel" class="avatar-img" id="hero-avatar" />
+          <div class="status-badge glass">
+            <div class="status-dot"></div>
+            <span>Open to work</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <div class="stats-strip">
+      <div class="stat-pill glass reveal">
+        <div class="stat-icon"><i class="fa-solid fa-calendar-check"></i></div>
+        <span class="stat-number">5+</span>
+        <span class="stat-label">Years Experience</span>
+      </div>
+      <div class="stat-pill glass reveal">
+        <div class="stat-icon"><i class="fa-solid fa-diagram-project"></i></div>
+        <span class="stat-number">40+</span>
+        <span class="stat-label">Projects Delivered</span>
+      </div>
+      <div class="stat-pill glass reveal">
+        <div class="stat-icon"><i class="fa-solid fa-star"></i></div>
+        <span class="stat-number">3k+</span>
+        <span class="stat-label">GitHub Stars</span>
+      </div>
+      <div class="stat-pill glass reveal">
+        <div class="stat-icon"><i class="fa-solid fa-face-smile"></i></div>
+        <span class="stat-number">12+</span>
+        <span class="stat-label">Happy Clients</span>
+      </div>
+    </div>
+
+    <!-- Featured Projects -->
+    <section class="featured">
+      <div class="section-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> Featured Work</div>
+      <h2 class="section-title">Recent <span class="gradient-text">Projects</span></h2>
+      <p class="section-subtitle">A selection of things I've built recently. Each one a blend of craft, performance, and
+        purpose.</p>
+
+      <div class="featured-grid">
+        <div class="project-card glass reveal">
+          <div class="project-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <div class="project-title">NovaDash</div>
+          <p class="project-desc">Real-time analytics dashboard with live WebSocket data streams, D3.js charts, and an
+            elegant UI serving 10k+ daily users.</p>
+          <div class="project-tags">
+            <span class="project-tag"><i class="fa-brands fa-react"></i> React</span>
+            <span class="project-tag"><i class="fa-solid fa-chart-pie"></i> D3.js</span>
+            <span class="project-tag"><i class="fa-solid fa-bolt"></i> WebSocket</span>
+            <span class="project-tag"><i class="fa-brands fa-node-js"></i> Node.js</span>
+          </div>
+          <div class="project-links">
+            <a href="projects.html" class="project-link">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="projects.html" class="project-link secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card glass reveal">
+          <div class="project-icon"><i class="fa-solid fa-robot"></i></div>
+          <div class="project-title">AetherAI</div>
+          <p class="project-desc">An AI-powered code review assistant that integrates with GitHub PRs, providing
+            contextual feedback and reducing review time by 60%.</p>
+          <div class="project-tags">
+            <span class="project-tag"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="project-tag"><i class="fa-solid fa-brain"></i> OpenAI</span>
+            <span class="project-tag"><i class="fa-solid fa-server"></i> FastAPI</span>
+            <span class="project-tag"><i class="fa-brands fa-docker"></i> Docker</span>
+          </div>
+          <div class="project-links">
+            <a href="projects.html" class="project-link">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="projects.html" class="project-link secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card glass reveal">
+          <div class="project-icon"><i class="fa-solid fa-cloud"></i></div>
+          <div class="project-title">CloudPortal</div>
+          <p class="project-desc">Multi-tenant SaaS infrastructure management platform with Terraform integration, cost
+            analytics, and one-click deployments to AWS and GCP.</p>
+          <div class="project-tags">
+            <span class="project-tag"><i class="fa-solid fa-layer-group"></i> Next.js</span>
+            <span class="project-tag"><i class="fa-solid fa-cubes"></i> Terraform</span>
+            <span class="project-tag"><i class="fa-brands fa-aws"></i> AWS</span>
+            <span class="project-tag"><i class="fa-solid fa-database"></i> PostgreSQL</span>
+          </div>
+          <div class="project-links">
+            <a href="projects.html" class="project-link">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="projects.html" class="project-link secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="centered-actions">
+        <a href="projects.html" class="btn btn-ghost">View All Projects <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Crafted with <i class="fa-solid fa-heart icon-pink"></i> & passion by <a href="index.html">Sanket Kandel</a> · © 2026</p>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
